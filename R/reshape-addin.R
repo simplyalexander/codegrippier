@@ -48,10 +48,10 @@ addin_reshape_unsafe <- function() {
   lines <- context$contents
   sel <- context$selection[[1]]$range
 
-  # No reshaping for selections
-  if (!identical(sel$start, sel$end)) {
-    return()
-  }
+  # YES reshaping for selections
+  # if (!identical(sel$start, sel$end)) {
+  #   return()
+  # }
 
   line <- sel$start[[1]]
   col <- sel$start[[2]]
